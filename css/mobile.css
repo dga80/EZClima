@@ -85,4 +85,11 @@ input[type="submit"] {
   width: 50vw;
   height: auto;
 }
+#formulario {
+  max-width: 85vw;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
 }
