@@ -1,21 +1,32 @@
 
-/* Estilos generales */
+/* Agrega el estilo para el video como fondo */
+/* Estilos para el video de fondo */
+/* Estilos para el video de fondo */
+video {
+  z-index: -1;
+  position: fixed; /* Cambiamos 'absolute' a 'fixed' */
+  top: 0;
+  left: 0;
+  width: 100%; /* Establecemos un ancho del 100% para cubrir todo el ancho del viewport */
+  height: 100%; /* Establecemos una altura del 100% para cubrir todo el alto del viewport */
+  object-fit: cover; /* Mantenemos la relación de aspecto */
+}
+
+/* Estilos adicionales */
 body {
-  background: #43cea2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  /* También es posible añadir un color de fuente y un margen para separar el contenido del video */
+  color: white;
+  margin-top: 20px;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+
 
 .container {
   padding: 20px;
+  position: relative;
+  padding-top: 150px;
 }
 
 #titulo {

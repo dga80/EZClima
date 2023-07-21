@@ -59,20 +59,21 @@ function consultarAPI(ciudad, pais){
         })
 }
 
-function mostrarClima(datos){
-    const {main: { temp, temp_max, temp_min }} = datos;
+function mostrarClima(datos) {
+    const { main: { temp, temp_max, temp_min } } = datos;
 
     const centigrados = kelvinACentigrados(temp);
 
     const actual = document.createElement('p');
     actual.innerHTML = `${centigrados} &#8451`;
-    actual.classList.add ('font-bold','text-6xl');
+    actual.classList.add('font-bold', 'text-6xl', 'text-blue-800','text-opacity-80'); // Cambiamos 'text-sky-400' por 'text-blue-400'
 
     const resultadoDiv = document.createElement('div');
-    resultadoDiv.classList.add('text-center','text-white');
+    resultadoDiv.classList.add('text-center');
     resultadoDiv.appendChild(actual);
     resultado.appendChild(resultadoDiv);
 }
+
 const kelvinACentigrados = grados => parseInt(grados - 273.15);
 
 function limpiarHTML(){
