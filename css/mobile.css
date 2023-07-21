@@ -24,9 +24,7 @@ body {
 
 
 .container {
-  padding: 20px;
   position: relative;
-  padding-top: 150px;
 }
 
 #titulo {
@@ -70,7 +68,7 @@ select {
 input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #43cea2;
+  background-color: #0a3378;
   color: white;
   border: none;
   border-radius: 3px;
@@ -83,4 +81,8 @@ input[type="submit"] {
     max-width: 100%;
     padding: 10px;
   }
+#logo{
+  width: 50vw;
+  height: auto;
+}
 }
